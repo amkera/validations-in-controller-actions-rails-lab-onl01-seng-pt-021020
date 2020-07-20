@@ -12,6 +12,7 @@ class AuthorsController < ApplicationController
 
     if @author.save
       redirect_to author_path(@author)
+      #raise params.inspect 
     else
       render :new
     end
